@@ -5,8 +5,7 @@ int[] array = CreatArray(15, 1, 999);
 int[] CreatArray(int size, int minValue, int maxValue) // Создание массива
 {
     int[] result = new int[size]; // Создание массива на size элементов
-    // Если size = 12, то массив состоит из 12 нулей
-    for (int i = 0; i < result.Length; i++) // result.Length = size
+    for (int i = 0; i < result.Length; i++) 
     {
         result[i] = new Random().Next(minValue, maxValue + 1);
     }
